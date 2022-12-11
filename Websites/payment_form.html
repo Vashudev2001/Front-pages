@@ -1,0 +1,48 @@
+<!--Payment Form-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <div class="card text-white bg-primary">
+      <img class="card-img-top" src="holder.js/100px180/" alt="">
+      <div class="card-body">
+        <h4 class="card-title">Title</h4>
+        <p class="card-text">Text</p>
+      </div>
+    </div>
+</head>
+<body>
+    <form action="">
+        <h1>PAYMENT FORM</h1>
+        <p>Required fields are followed by *</p>
+        <h2>CONTACT INFORMATION</h2>
+        <p>Name:* <input type="text" name="name" required></p>
+        <p>
+            <fieldset>
+                <legend>Gender</legend>
+                Male<input type="radio" name="gender" id="male">
+                Female<input type="radio" name="gender" id="female">   
+            </fieldset>
+        </p>
+        <p>Address:* <textarea name="address" id="address" cols="50" rows="5" required></textarea></p>
+        <p>Email:* <input type="email" name="email" id="email" required></p>
+        <p>Pincode: <input type="number" name="pincode" id="pincode"></p>
+        <h2>Payment Information</h2>
+        <p>Card Type:* 
+            <select name="card_type" id="card_type" required>
+                <option value="">--Select Card Type</option>
+                <option value="visa"></option>
+                <option value="Rupay"></option>
+                <option value="Master Card"></option>
+            </select>
+        </p>
+        <p>Card Number:* <input type="number" name="number" id="number" required></p>
+        <p>Expiry Date:* <input type="date" name="exp_date" id="exp_date" required> </p>
+        <p>CVV* <input type="password" name="CVV" id="CVV" required></p>
+        <P><input type="submit" value="Pay Now"></P>
+    </form>
+</body>
+</html>
